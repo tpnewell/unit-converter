@@ -10,8 +10,7 @@ let textElThree = document.getElementById('textElThree');
 
 convertBtn.addEventListener('click', () => {
     let baseInput = inputEl.value;
-    textElOne.textContent = `${baseInput} meters = ${baseInput * meter} feet | ${baseInput} feet = ${baseInput / meter} meters`;
-    textElTwo.textContent = `${baseInput} meters = ${baseInput * meter} feet | ${baseInput} feet = ${baseInput / meter} meters`;
-    textElThree.textContent = `${baseInput} meters = ${baseInput * meter} feet | ${baseInput} feet = ${baseInput / meter} meters`;
-    
+    textElOne.textContent = `${baseInput} meters = ${(baseInput * meter).toFixed(3)} feet | ${baseInput} feet = ${(baseInput / meter).toFixed(3)} meters`;
+    textElTwo.textContent = `${baseInput} liters = ${(baseInput * liter).toFixed(3)} gallons | ${baseInput} gallons = ${(baseInput / liter).toFixed(3)} liters`;
+    textElThree.textContent = `${baseInput} kilograms = ${(baseInput * kilogram).toFixed(3)} pounds | ${baseInput} pounds = ${(baseInput / kilogram).toFixed(3)} kilos`;
 })
